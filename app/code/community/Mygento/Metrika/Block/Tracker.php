@@ -37,6 +37,8 @@ class Mygento_Metrika_Block_Tracker extends Mage_Core_Block_Template
         if (Mage::getStoreConfig('metrika/metrika/ecommerce')) {
             $options['ecommerce'] = (bool) Mage::getStoreConfig('metrika/metrika/ecommerce');
         }
+
+        return $options;
     }
 
     protected function _toHtml()
